@@ -53,7 +53,7 @@ export const MetricCard: React.FC<MetricCardProps> = ({
         backgroundColor: '#0f0f0f1a', 
         padding: 16,
         borderRadius: 4,
-        borderWidth: 0.5,
+        borderWidth: 0.1,
         borderColor: '#1111111a',
         width: cardWidth,
         minHeight: 100,
