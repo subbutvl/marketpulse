@@ -57,7 +57,8 @@ export const MetricCard: React.FC<MetricCardProps> = ({
         borderColor: '#1111111a',
         width: cardWidth,
         minHeight: 100,
-        justifyContent: 'space-between',
+        justifyContent: 'flex-start',  
+        gap: 1,
       }}
     >
       {/* Upper Label Matrix Block */}

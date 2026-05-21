@@ -74,11 +74,11 @@ export default function App() {
             <ActivityIndicator size="small" color="#00E699" />
           </View>
         ) : (
-          <ScrollView contentContainerStyle={{ padding: 16, gap: 24 }} showsVerticalScrollIndicator={false}>
+          <ScrollView contentContainerStyle={{ padding: 16, gap: 16 }} showsVerticalScrollIndicator={false}>
             
             {/* GROUP 1: Currency Matrix */}
             <View>
-              <Text style={{ color: '#5C5B5C', fontSize: 11, fontWeight: '800', letterSpacing: 1.2, textTransform: 'uppercase', marginBottom: 12 }}>
+              <Text style={{ color: '#5C5B5C', fontSize: 11, fontWeight: '800', letterSpacing: 1.2, textTransform: 'uppercase', marginBottom: 0 }}>
                 Currencies
               </Text>
               <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 16 }}>
@@ -89,7 +89,7 @@ export default function App() {
 
             {/* GROUP 2: Stock Indexes */}
             <View>
-              <Text style={{ color: '#5C5B5C', fontSize: 11, fontWeight: '800', letterSpacing: 1.2, textTransform: 'uppercase', marginBottom: 12 }}>
+              <Text style={{ color: '#5C5B5C', fontSize: 11, fontWeight: '800', letterSpacing: 1.2, textTransform: 'uppercase', marginBottom: 0 }}>
                 Stock Indexes
               </Text>
               <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 16 }}>
@@ -101,10 +101,10 @@ export default function App() {
             {/* GROUP 3: Fuel & Energy */}
             <View>
               {/* Superscript 2 placed right behind the dynamic active city name */}
-              <Text style={{ color: '#5C5B5C', fontSize: 11, fontWeight: '800', letterSpacing: 1.2, textTransform: 'uppercase', marginBottom: 12 }}>
+              <Text style={{ color: '#5C5B5C', fontSize: 11, fontWeight: '800', letterSpacing: 1.2, textTransform: 'uppercase', marginBottom: 0 }}>
                 Fuel & Energy ({selectedCity})<Text style={{ color: '#00E699', fontSize: 12 }}>²</Text>
               </Text>
-              <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 16 }}>
+              <View style={{ flexDirection: 'row', flexWrap: 'wrap', rowGap: 1, columnGap: 16  }}>
                 <MetricCard label="Petrol Price" value={localData?.petrol || 0} unit="/L" accentColor="#00AAFF" />
                 <MetricCard label="Diesel Price" value={localData?.diesel || 0} unit="/L" accentColor="#00AAFF" />
                 <MetricCard label="LPG Cylinder" value={localData?.lpg || 0} unit=" Cyl" accentColor="#FF7E44" />
@@ -115,7 +115,7 @@ export default function App() {
             {/* GROUP 4: Precious Metals */}
             <View>
               {/* Superscript 1 placed right behind Precious Metals text node */}
-              <Text style={{ color: '#5C5B5C', fontSize: 11, fontWeight: '800', letterSpacing: 1.2, textTransform: 'uppercase', marginBottom: 12 }}>
+              <Text style={{ color: '#5C5B5C', fontSize: 11, fontWeight: '800', letterSpacing: 1.2, textTransform: 'uppercase', marginBottom: 0 }}>
                 Precious Metals<Text style={{ color: '#00E699', fontSize: 12 }}>¹</Text> ({selectedCity})<Text style={{ color: '#00E699', fontSize: 12 }}>²</Text>
               </Text>
               <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 16 }}>
@@ -127,7 +127,7 @@ export default function App() {
 
             {/* GROUP 5: Luxury & Strategic Assets */}
             <View>
-              <Text style={{ color: '#5C5B5C', fontSize: 11, fontWeight: '800', letterSpacing: 1.2, textTransform: 'uppercase', marginBottom: 12 }}>
+              <Text style={{ color: '#5C5B5C', fontSize: 11, fontWeight: '800', letterSpacing: 1.2, textTransform: 'uppercase', marginBottom: 0 }}>
                 Luxury & Strategic Assets
               </Text>
               <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 16 }}>
