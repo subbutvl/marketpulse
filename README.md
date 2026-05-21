@@ -4,6 +4,19 @@ A React Native (Expo) mobile app for tracking real-time Indian market data — c
 
 ---
 
+## Screenshots
+
+<p align="center">
+  <img src="./screenshots/splash.png" alt="Splash Screen" width="220" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="./screenshots/home.png" alt="Home Dashboard" width="220" />
+</p>
+<p align="center">
+  <sub>Splash Screen &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Home Dashboard (Chennai)</sub>
+</p>
+
+---
+
 ## Features
 
 - **Live Forex Rates** — USD/INR and EUR/INR from ExchangeRate API
