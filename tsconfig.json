@@ -1,6 +1,8 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
+    "moduleResolution": "bundler",
     "strict": true
-  }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "globals.d.ts"]
 }
